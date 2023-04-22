@@ -10,7 +10,7 @@ function Card(props) {
           <p className="text-gray-600 text-sm">Type: {props.type}</p>
           <p className="text-gray-600 text-sm">Quantity: {props.quantity}</p>
           <p className="text-gray-600 text-sm">Collateral: {props.collateral}</p>
-          <p className="text-gray-600 text-sm"><a href={props.link}>Jump to message</a></p>
+          <p className="text-gray-600 text-sm"><a href={props.link} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">Jump to message</a></p>
         </div>
       </div>
     );
