@@ -10,7 +10,7 @@ export default function Home() {
     event.preventDefault();
     // Disable SSL/TLS certificate validation
     process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
-    const url = `http://139.59.244.62:3000/search?type=${type}&keyword=${encodeURIComponent(keyword)}`;
+    const url = `https://urchin-app-cps4w.ondigitalocean.app/search?type=${type}&keyword=${encodeURIComponent(keyword)}`;
     try {
       const response = await fetch(url);
       const data = await response.json();
